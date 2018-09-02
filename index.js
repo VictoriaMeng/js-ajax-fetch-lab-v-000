@@ -10,8 +10,8 @@ function showIssues(json) {
 function createIssue() {
   debugger;
   title = document.getElementById('title').value;
-  text = document.getElementById('text').value;
-  
+  body = document.getElementById('body').value;
+
 }
 
 function showResults(json) {
