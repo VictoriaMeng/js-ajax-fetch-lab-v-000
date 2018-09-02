@@ -15,15 +15,17 @@ function showResults(json) {
 
 function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
-  fetch(`${baseUrl}/repos/${repo}/forks`, {
-    method: 'post';
+
+  fetch(`${baseApi}/repos/${repo}/forks`, {
+    method: 'post',
     headers: {
       Authorization: `token ${token}`
     }
-  }).then(resp => resp.json()).
-    then(json => showResults())
-  //use fetch to fork it!
+  }).then(resp =>resp.json()).
+    then(json => showResults(json))
 }
+
+
 
 function getToken() {
   //change to your token to run in browser, but set
