@@ -1,5 +1,6 @@
 const token = `59be9d77882277a85a7185c5847428008ae35c86`;
 const baseUrl = `https://api.github.com`;
+const fork = `VictoriaMeng/javascript-fetch-lab`;
 
 function getIssues() {
 }
@@ -9,9 +10,13 @@ function showIssues(json) {
 
 function createIssue() {
   debugger;
-  title = document.getElementById('title').value;
-  body = document.getElementById('body').value;
+  const title = document.getElementById('title').value;
+  const body = document.getElementById('body').value;
+  const issue = { title: title, body: body };
 
+  fetch(`${baseUrl}/repos/`
+    
+  )
 }
 
 function showResults(json) {
