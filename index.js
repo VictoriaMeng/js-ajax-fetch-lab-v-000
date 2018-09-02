@@ -9,6 +9,7 @@ function getIssues() {
 }
 
 function showIssues(json) {
+  debugger;
 }
 
 function createIssue() {
