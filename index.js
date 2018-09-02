@@ -22,7 +22,7 @@ function forkRepo() {
       Authorization: `token ${token}`
     }
   }).then(resp => resp.json()).
-    then(json => showResults())
+    then(json => showResults(json))
   //use fetch to fork it!
 }
 
