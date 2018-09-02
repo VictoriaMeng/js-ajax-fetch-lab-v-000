@@ -16,7 +16,7 @@ function createIssue() {
 
   fetch(`${baseUrl}/repos/${fork}/issues`).
     then(resp => resp.json()).
-    then(json => showIssues())
+    then(json => showIssues(json))
 }
 
 function showResults(json) {
