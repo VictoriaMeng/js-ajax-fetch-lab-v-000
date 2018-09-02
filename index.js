@@ -12,6 +12,7 @@ function createIssue() {
 
 function showResults(json) {
   debugger;
+  document.getElementById("results").innerHTML += json.documentation_url;
 }
 
 function forkRepo() {
