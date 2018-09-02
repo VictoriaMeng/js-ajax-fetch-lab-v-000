@@ -18,9 +18,14 @@ function createIssue() {
   const body = document.getElementById('body').value;
   const issue = { title: title, body: body };
 
-  fetch(`${baseUrl}/repos/${fork}/issues`).
-    then(resp => resp.json()).
-    then(json => getIssues(json))
+  fetch(`${baseUrl}/repos/${fork}/issues`, {
+    method: `post`,
+    headers: {
+      Authorization: `token ${token}`
+    },
+    body: JSON.stringify(issue);
+  }).
+    then(json => getIssues())
 }
 
 function showResults(json) {
