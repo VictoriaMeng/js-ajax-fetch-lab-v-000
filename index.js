@@ -1,4 +1,4 @@
-const token = `5b9222632611db6d4cf2d1ae541eadd180f0e535`;
+const token = `59be9d77882277a85a7185c5847428008ae35c86`;
 const baseUrl = `https://api.github.com`;
 
 function getIssues() {
