@@ -9,7 +9,6 @@ function showIssues(json) {
 }
 
 function createIssue() {
-  debugger;
   const title = document.getElementById('title').value;
   const body = document.getElementById('body').value;
   const issue = { title: title, body: body };
