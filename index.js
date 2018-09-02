@@ -3,6 +3,9 @@ const baseUrl = `https://api.github.com`;
 const fork = `VictoriaMeng/javascript-fetch-lab`;
 
 function getIssues() {
+  fetch(`${baseUrl}/repos/${fork}/issues`).
+    then(resp => resp.json()).
+    then(json => showIssues(json))
 }
 
 function showIssues(json) {
