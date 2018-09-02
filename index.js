@@ -9,6 +9,8 @@ function showIssues(json) {
 
 function createIssue() {
   debugger;
+  title = document.getElementById('title').value;
+  text = document.getElementById('text').value;
   
 }
 
