@@ -14,7 +14,7 @@ function createIssue() {
   const body = document.getElementById('body').value;
   const issue = { title: title, body: body };
 
-  fetch(`${baseUrl}/repos/fork/issues`
+  fetch(`${baseUrl}/repos/${fork}/issues`
 
   )
 }
