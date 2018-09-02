@@ -9,7 +9,6 @@ function getIssues() {
 }
 
 function showIssues(json) {
-  debugger;
   const template = Handlebars.compile(document.getElementById('issues-template').innerHTML);
   document.getElementById('issues').innerHTML = template(json);
 }
