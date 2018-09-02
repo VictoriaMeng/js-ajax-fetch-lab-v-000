@@ -16,7 +16,7 @@ function showResults(json) {
 function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
 
-  fetch(`${baseApi}/repos/${repo}/forks`, {
+  fetch(`${baseUrl}/repos/${repo}/forks`, {
     method: 'post',
     headers: {
       Authorization: `token ${token}`
