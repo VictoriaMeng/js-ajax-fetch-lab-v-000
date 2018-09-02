@@ -8,6 +8,8 @@ function showIssues(json) {
 }
 
 function createIssue() {
+  debugger;
+  
 }
 
 function showResults(json) {
