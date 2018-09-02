@@ -11,6 +11,7 @@ function createIssue() {
 }
 
 function showResults(json) {
+  debugger;
 }
 
 function forkRepo() {
